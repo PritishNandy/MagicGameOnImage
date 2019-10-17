@@ -64,7 +64,7 @@ for p in range(3):
         image = image[2] + image[3] +image[1]
         
 #Displaying middle image  of list of image after calculation 
-img = cv2.imread(image[13],1)
+img = cv2.imread(image[len(image)//2],1)
 img = cv2.cvtColor(img , cv2.COLOR_BGR2RGB)
 plt.subplot(1,1,1)
 print("Here you Selected ")
