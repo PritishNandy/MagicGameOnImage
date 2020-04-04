@@ -7,7 +7,7 @@ random.shuffle(image)
 image = image[:27]
 
 def display(s,ilist):
-    #To Display groups of image in console by using cv2 a subplot 
+    '''To Display groups of image in console by using cv2 a subplot '''
     
     print("##########################Group{0} ##############################################".format(s))
     for i in range(len(ilist)):
@@ -22,8 +22,8 @@ def display(s,ilist):
     return 1
 
 def MindArrange(p,a):
-    #This function help to divide list of image in groups to do calculation and 
-    #its call display function to display 
+    '''This function help to divide list of image in groups to do calculation and 
+    its call display function to display''' 
     g0,g1,g2 = [],[],[]
     for i in range(len(image)):
         if i%3 == 0:
@@ -71,4 +71,3 @@ print("Here you Selected ")
 plt.imshow(img)
 plt.xticks([])
 plt.yticks([])
-
