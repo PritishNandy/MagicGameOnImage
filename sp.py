@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 import random
-
+###
 image = list( {"pic/t" + str(i) +".jpg" for i in range(1,48) } )
 random.shuffle(image)
 image = image[:27]
